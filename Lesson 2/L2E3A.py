@@ -10,7 +10,7 @@ DEFAULT_GATEWAY = os.environ.get("EOS_GATEWAY", "10.220.88.1")
 
 
 def main():
-	nr = InitNornir(config_file="config.yaml")
+	nr = InitNornir(config_file="../Lesson 3/config.yaml")
 	# Filtering - will be explained in detail in later lessons.
 	ios_filt = F(groups__contains="ios")
 	eos_filt = F(groups__contains="eos")
