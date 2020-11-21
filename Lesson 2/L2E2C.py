@@ -8,12 +8,12 @@ def main():
 	filt = F(groups__contains="ios")
 	nr = nr.filter(filt)
 	my_results = nr.run(
-			task=netmiko_send_command,
-			command_string="show run | i hostname")
+			task=netmiko_send_command, command_string="show run | i hostname"
+			)
 	host_results = my_results["cisco3"]
 
 	print()
-	print(type(my_results))
+	print(type(host_results))
 	print(repr(host_results[0]))
 	print(host_results.__iter__)
 	print()
