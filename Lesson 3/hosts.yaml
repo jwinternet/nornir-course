@@ -25,7 +25,7 @@ arista3:
   hostname: arista3.lasthop.io
   port: 8443
   groups:
-    - eos
     - sea
+    - eos
   data:
     role: AGG
