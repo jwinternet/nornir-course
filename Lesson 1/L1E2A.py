@@ -10,7 +10,6 @@ def main():
 				"-" * 20,
 				f"\n\nHostname: {host_obj.hostname}",
 				f"\nGroups: {host_obj.groups[0]}",
-				f"\nGroups: {host_obj.groups[0:]}",
 				f"\nPlatform: {host_obj.platform}",
 				f"\nUsername: {host_obj.username}",
 				f"\nPassword: {host_obj.password}",
