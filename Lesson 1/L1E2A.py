@@ -4,7 +4,7 @@ from nornir import InitNornir
 def main():
 	""""""
 	nr = InitNornir()
-	for host_name, host_obj in nr.inventory.items():
+	for host_name, host_obj in nr.inventory.hosts.items():
 		print(
 				f"Host: {host_name}",
 				"-" * 20,
