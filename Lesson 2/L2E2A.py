@@ -3,10 +3,14 @@ from nornir.core.filter import F
 
 
 def main():
-	nr = InitNornir()
+	nr = InitNornir(config_file="config.yaml")
 	filt = F(groups__contains="ios")
 	nr = nr.filter(filt)
-	print(nr.inventory.hosts)
+	print(
+			"\n",
+			nr.inventory.hosts,
+			"\n",
+	)
 
 
 if __name__ == "__main__":
