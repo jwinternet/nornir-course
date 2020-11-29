@@ -2,7 +2,7 @@ from nornir import InitNornir
 
 
 def main():
-	nr = InitNornir(config_file="config.yaml")
+	nr = InitNornir(config_file="config.yaml", core={"num_workers": 15})
 	print(f"\nNumber of workers: {nr.config.core.num_workers}\n")
 
 
