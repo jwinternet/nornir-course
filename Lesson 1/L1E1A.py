@@ -4,7 +4,7 @@ from nornir import InitNornir
 def main():
 	nr = InitNornir()
 	print(
-			"--Lesson 1, Exercise 1A--"
+			"\n--Lesson 1, Exercise 1A--",
 			"\nnr.inventory:\n",
 			nr.inventory,
 			"\n\nnr.inventory.hosts:\n",
