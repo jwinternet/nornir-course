@@ -7,12 +7,11 @@ def my_task(task):
 	time.sleep(random())
 	host = task.host
 	print(
-			"\n--Lesson 1, Exercise 4A--\n",
 			task.host.hostname,
 			"\n",
 			"-" * 20,
-			f"\n\nDNS1: {host['dns1']}",
-			f"\nDNS2: {host['dns2']}\n",
+			f"\n\n   DNS1: {host['dns1']}",
+			f"\n   DNS2: {host['dns2']}\n",
 	)
 
 
