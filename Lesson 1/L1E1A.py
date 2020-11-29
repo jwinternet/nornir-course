@@ -4,13 +4,14 @@ from nornir import InitNornir
 def main():
 	nr = InitNornir()
 	print(
-			"\nnr.inventory:",
+			"--Lesson 1, Exercise 1A--"
+			"\nnr.inventory:\n",
 			nr.inventory,
-			"\nnr.inventory.hosts:",
+			"\n\nnr.inventory.hosts:\n",
 			nr.inventory.hosts,
-			"\nnr.inventory.hosts['my_host']:",
+			"\n\nnr.inventory.hosts['my_host']:\n",
 			nr.inventory.hosts['my_host'],
-			"\nnr.inventory.hosts['my_host'].hostname:",
+			"\n\nnr.inventory.hosts['my_host'].hostname:\n",
 			nr.inventory.hosts['my_host'].hostname,
 	)
 
