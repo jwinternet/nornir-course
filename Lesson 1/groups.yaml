@@ -1,6 +1,4 @@
 ---
 ios:
   platform: cisco_ios
-  username: admin
-  password: cisco
   port: 22
